@@ -1,18 +1,21 @@
 // scrivere un programma che stampi in console i numeri da 1 a 100;
 for (let RowNumber = 1; RowNumber <= 100; RowNumber++) {
-  // 1.Per i multipli di 3 stampi “Fizz” al posto del numero 
-  if (RowNumber % 3 == 0) {
-      console.log('Fizz');
+  // se il numero è moltiplo di 3 e 5 mostra fizzbuzz 
+  if ((RowNumber % 3 == 0) && (RowNumber % 5 == 0)) {
+    console.log('FizzBuzz');
+
+    // se il numero è divisibile per 3 mostra fizz
+  } else if (RowNumber % 3 == 0) {
+    console.log('Fizz');
+
+    // se il numero è divisibile per 5 mostra buzz
   } else if (RowNumber % 5 == 0) {
-      // per i multipli di 5 stampi Buzz.
-      console.log('Buzz');
-  } else if (RowNumber % 3 == 0) && (RowNumber % 5 == 0) {
-    // Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
-      console.log('FizzBuzz');
+    console.log('Buzz');
+
+    // se il numero non soddisfa le condizioni sopra, allora mostra il numero 
   } else {
-    // stampa del numero normale
     console.log(RowNumber);
-  } 
+  }
 }
 
 // 2. Dato un container nel DOM, appendi un elemento html con il numero o la stringa corretta.
