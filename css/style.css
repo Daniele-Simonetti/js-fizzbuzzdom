@@ -16,3 +16,19 @@
 html {
   font-size: 100%;
 }
+
+body {
+  background-color: var(--bg-color);
+}
+
+/* layout */
+header {
+  text-align: center;
+}
+
+header h1.main-title {
+  margin: 0.4em 0 0.6em 0;
+  font-size: 6em;
+  font-weight: bolder;
+  color: white;
+}
