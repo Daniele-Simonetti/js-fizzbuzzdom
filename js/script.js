@@ -35,7 +35,7 @@ for (let RowNumber = 1; RowNumber <= 100; RowNumber++) {
     const ItemList = document.createElement('li');
     ItemList.append(RowNumber);
     // cambio del testo
-    ItemList.innerHTML = 'fizzbuzz';
+    ItemList.innerHTML = 'fizz';
     // aggiunta del colore 
     ItemList.classList.add('green');
     list.append(ItemList);
@@ -44,6 +44,8 @@ for (let RowNumber = 1; RowNumber <= 100; RowNumber++) {
   } else if (RowNumber % 5 == 0) {
     const ItemList = document.createElement('li');
     ItemList.append(RowNumber);
+    // cambio del testo
+    ItemList.innerHTML = 'buzz';
     // aggiunta del colore 
     ItemList.classList.add('yellow');
     list.append(ItemList);
