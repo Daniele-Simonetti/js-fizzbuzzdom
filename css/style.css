@@ -32,3 +32,9 @@ header h1.main-title {
   font-weight: bolder;
   color: white;
 }
+
+/* main layout */
+main {
+  width: 70%;
+  margin: 0 auto;
+}
