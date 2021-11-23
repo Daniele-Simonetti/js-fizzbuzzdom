@@ -4,6 +4,7 @@
   --normal-sqaure: rgb(19, 137, 178);
   --green-square: rgb(11, 214, 161);
   --yellow-square: rgb(255, 209, 102);
+  --red-square: rgb(239, 70, 111);
 }
 
 /* genral rules */
@@ -37,4 +38,32 @@ header h1.main-title {
 main {
   width: 70%;
   margin: 0 auto;
+}
+
+ul.number_list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul li {
+  width: 120px;
+  height: 120px;
+  background-color: var(--normal-sqaure);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+/* classses to add with js */
+.green {
+  background-color: var(--green-square);
+}
+.yellow {
+  background-color: var(--yellow-square);
+}
+.red {
+  background-color: var(--red-square);
 }
